@@ -1,5 +1,62 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.insights__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: $primary-bg-color;
+  padding-block: 161px;
+  display: flex;
+  justify-content: space-evenly;
+  .insights__content {
+    max-width: 657px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    h1 {
+      font-size: $lg-font-size;
+      color: $primary-color;
+      font-weight: bold;
+
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    p {
+      color: $sm-font-color;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: $btn-bg-color;
+      border-radius: 5px;
+      padding: 14px 32px;
+      color: #fff;
+      max-width: 128px;
+    }
+  }
+
+  .insights-image {
+    max-width: 391px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width:992px) {
+  .insights__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+    gap: 40px;
+  }
+
+  .insights__content {
+    align-items: center;
+    text-align: center;
+}
 }

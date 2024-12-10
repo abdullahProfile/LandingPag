@@ -113,3 +113,58 @@ header .fas {
     display: none !important;
   }
 }
+.insights__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: #F5F7FA;
+  padding-block: 161px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.insights__container .insights__content {
+  max-width: 657px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.insights__container .insights__content h1 {
+  font-size: 64px;
+  color: #4D4D4D;
+  font-weight: bold;
+}
+.insights__container .insights__content h1 span {
+  color: #4CAF4F;
+}
+.insights__container .insights__content p {
+  color: #717171;
+}
+.insights__container .insights__content a {
+  text-decoration: none;
+  background-color: #4CAF4F;
+  border-radius: 5px;
+  padding: 14px 32px;
+  color: #fff;
+  max-width: 128px;
+}
+.insights__container .insights-image {
+  max-width: 391px;
+  overflow: hidden;
+}
+.insights__container .insights-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .insights__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 50px;
+    gap: 40px;
+  }
+  .insights__content {
+    align-items: center;
+    text-align: center;
+  }
+}
