@@ -382,3 +382,51 @@ header .fas {
     gap: 30px;
   }
 }
+.cta-section__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  text-align: center;
+  background: #F5F7FA;
+  padding-block: 32px;
+}
+.cta-section__container h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #4D4D4D;
+  margin-bottom: 46px;
+}
+.cta-section__container a {
+  text-decoration: none;
+  padding: 14px 32px;
+  background: #4CAF4F;
+  color: #fff;
+  border-radius: 5px;
+  max-width: 178px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+.cta-section__container a span {
+  display: inline-flex;
+  align-items: center;
+}
+.cta-section__container a:hover span {
+  animation: move-arrow 0.5s ease-in-out infinite;
+}
+@keyframes move-arrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 778px) {
+  .cta-section__container h2 {
+    font-size: 36px;
+  }
+}
