@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Langin Page</title>
+</head>
+<body>
+  <header>
+    <a href="#"><img src="./assets/logo/Logo.svg" alt="logo"></a>
+
+    <nav class="header-navbar">
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">Feature</a>
+      <a href="#">Product</a>
+      <a href="#">Testimonial</a>
+      <a href="#">FAQ</a>
+
+      <span class="menu-hid">
+        <a href="#" class="header-login_cta">Login</a>
+        <a href="#" class="header-signUp_cta">SignUp</a>
+      </span>
+
+      <button class="fas fa-times close-menu" onclick="closeMenu()"></button>
+    </nav>
+
+    <nav class="header-navbar_secondary">
+      <a href="#" class="header-login_cta">Login</a>
+      <a href="#" class="header-signUp_cta">SignUp</a>
+    </nav>
+
+    <button class="fas fa-bars open-menu" onclick="openMenu()"></button>
+  </header>
+
+  <script src="./script.js"></script>
+</body>
+</html>

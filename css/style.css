@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0;
+  align-items: center;
+  margin-inline: auto;
+}
+header button {
+  background-color: transparent;
+  border: 0;
+}
+header a {
+  text-decoration: none;
+}
+header .header-navbar {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header .header-navbar a {
+  text-decoration: none;
+  color: #18191F;
+}
+header .header-navbar a:hover {
+  color: #4CAF4F;
+}
+header .header-navbar .menu-hid {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  display: none;
+}
+header .header-navbar .menu-hid .header-login_cta {
+  color: #fff;
+}
+header .header-navbar .menu-hid .header-signUp_cta {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF4F;
+  color: #fff;
+}
+header .header-navbar_secondary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .header-navbar_secondary .header-login_cta {
+  color: #4CAF4F;
+}
+header .header-navbar_secondary .header-login_cta:hover {
+  color: #000;
+}
+header .header-navbar_secondary .header-signUp_cta {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4CAF4F;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+header .header-navbar_secondary .header-signUp_cta:hover {
+  background-color: #000;
+}
+header .fas {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  color: green;
+  font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  header {
+    justify-content: start;
+    padding-inline: 10px;
+  }
+  .header-navbar {
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    right: -100%;
+    background: #bababa;
+    align-items: center;
+    display: none;
+    width: 70%;
+    height: 100%;
+    z-index: 100;
+    justify-content: center;
+    top: 0;
+    transition: right 0.5s ease-in;
+  }
+  .header-navbar.open {
+    right: 0;
+    display: flex;
+  }
+  .fas {
+    display: block !important;
+  }
+  .menu-hid {
+    display: block;
+  }
+  .header-navbar_secondary {
+    display: none !important;
+  }
+}
