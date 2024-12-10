@@ -1,0 +1,36 @@
+.clients-section__container {
+  max-width: 1440px;
+  margin-block: 40px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .clients-section__header {
+    text-align: center;
+
+    h2 {
+      font-size: $md-font-size;
+      color: $primary-color;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    p {
+      color: $sm-font-color;
+    }
+  }
+
+  .clients-section__logos {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
+  @media (max-width:768px) {
+    .clients-section__logos {
+      flex-direction: column;
+    }
+  }
+}

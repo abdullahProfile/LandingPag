@@ -2,9 +2,11 @@
   max-width: 1440px;
   margin-inline: auto;
   background-color: $primary-bg-color;
-  padding-block: 161px;
+  padding-block: 96px;
   display: flex;
   justify-content: space-evenly;
+  position: relative;
+
   .insights__content {
     max-width: 657px;
     display: flex;
@@ -32,6 +34,28 @@
       padding: 14px 32px;
       color: #fff;
       max-width: 128px;
+      position: relative;
+      display: inline-block;
+      transition: all .3s ease-in;
+      z-index: 0;
+
+      &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        background-color: #000;
+        color: #fff;
+        border-radius: 5px;
+        z-index: -1;
+        transition: all .3s ease-in;
+      }
+
+      &:hover::after{
+        width: 100%;
+      }
     }
   }
 
@@ -59,4 +83,35 @@
     align-items: center;
     text-align: center;
 }
+}
+
+@media (max-width:768px) {
+  .insights__content  h1 {
+    font-size: 30px !important;
+  }
+}
+
+.pagination {
+  max-width: 46px;
+  display: flex;
+  gap: 10px;
+  margin-inline: auto;
+  position: absolute;
+  bottom: 16px;
+
+  div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  .pagination-first{
+    background-color: $btn-bg-color;
+    cursor: pointer;
+  }
+
+  .pagination-div {
+    background: #4caf4f99;
+    cursor: pointer;
+  }
 }
