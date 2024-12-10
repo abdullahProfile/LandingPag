@@ -45,5 +45,21 @@
         background: #000;
       }
     }
+
+  }
+
+  @media (max-width:992px) {
+    .article-section__content {
+      text-align: center;
+    }
+  }
+
+}
+
+@media (max-width:992px) {
+  .article-section__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
