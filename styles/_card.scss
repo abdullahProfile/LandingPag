@@ -7,10 +7,11 @@
   gap: 20px;
 
   .cards__header {
-    max-width: 542px;
+    max-width: 524px;
     text-align: center;
     margin-inline: auto;
-    h3 {
+
+    h2 {
       font-size: $md-font-size;
       color: $primary-color;
       font-weight: 600;
