@@ -35,6 +35,7 @@ header .header-navbar .menu-hid {
   display: flex;
   gap: 10px;
   align-items: center;
+  gap: 14px;
   display: none;
 }
 header .header-navbar .menu-hid .header-login_cta {
@@ -49,6 +50,7 @@ header .header-navbar .menu-hid .header-signUp_cta {
 header .header-navbar_secondary {
   display: flex;
   gap: 10px;
+  gap: 14px;
   align-items: center;
 }
 header .header-navbar_secondary .header-login_cta {
@@ -104,7 +106,7 @@ header .fas {
     display: block !important;
   }
   .menu-hid {
-    display: block;
+    display: flex !important;
   }
   .header-navbar_secondary {
     display: none !important;
