@@ -382,6 +382,59 @@ header .fas {
     gap: 30px;
   }
 }
+.article-section__two {
+  margin-top: 48px;
+}
+
+.stats__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F5F7FA;
+  padding-block: 84px;
+}
+.stats__container .stats__intro h3 {
+  font-size: 36px;
+  color: #4D4D4D;
+  font-weight: 600;
+}
+.stats__container .stats__intro h3 span {
+  color: #4CAF4F;
+}
+.stats__container .stats__intro p {
+  color: #18191F;
+}
+.stats__container .stats__items {
+  max-width: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px 40px;
+}
+.stats__container .stats__items .stats__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  max-width: 180px;
+}
+.stats__container .stats__items .stats__item .stats__details h4 {
+  font-size: 28px;
+  color: #4D4D4D;
+  font-weight: 700;
+}
+.stats__container .stats__items .stats__item .stats__details p {
+  color: #717171;
+}
+@media (max-width: 992px) {
+  .stats__container .stats__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+}
+
 .cta-section__container {
   max-width: 1440px;
   margin-inline: auto;
