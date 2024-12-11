@@ -426,15 +426,15 @@ header .fas {
 .stats__container .stats__items .stats__item .stats__details p {
   color: #717171;
 }
+
 @media (max-width: 992px) {
-  .stats__container .stats__container {
+  .stats__container {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 40px;
   }
 }
-
 .cta-section__container {
   max-width: 1440px;
   margin-inline: auto;
