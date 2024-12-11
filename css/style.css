@@ -483,3 +483,102 @@ header .fas {
     font-size: 36px;
   }
 }
+
+.footer__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 64px;
+  display: flex;
+  justify-content: space-evenly;
+  background: #263238;
+  gap: 125px;
+}
+.footer__container .footer__nav--main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footer__container .footer__nav--main p {
+  font-size: 14px;
+  color: #F5F7FA;
+}
+.footer__container .footer__nav--main .footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer__container .footer__nav--main .footer__socials .footer__social {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 7px;
+  background: #717171;
+}
+.footer__container .footer__nav--main .footer__socials .footer__social a {
+  font-size: 0;
+}
+.footer__container .footer__nav--main .footer__socials .footer__social:hover {
+  background-color: #4CAF4F;
+}
+.footer__container .footer__links {
+  display: flex;
+  gap: 100px;
+  max-width: 640px;
+}
+.footer__container .footer__links .footer__nav h4 {
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 24px;
+}
+.footer__container .footer__links .footer__nav div {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.footer__container .footer__links .footer__nav div a {
+  text-decoration: none;
+  color: #FFF;
+  transition: color 0.3s ease-in;
+}
+.footer__container .footer__links .footer__nav div a:hover {
+  color: #4CAF4F;
+}
+.footer__container .footer__links .footer__form {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container .footer__links .footer__form label {
+  font-size: 20px;
+  color: #FFF;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+.footer__container .footer__links .footer__form .footer__form-input-container {
+  position: relative;
+}
+.footer__container .footer__links .footer__form .footer__form-input-container input {
+  padding: 9px 12px;
+  background-color: #504f4f;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+}
+.footer__container .footer__links .footer__form .footer__form-input-container input ::placeholder {
+  color: #D9DBE1;
+  font-size: 14px;
+}
+.footer__container .footer__links .footer__form .footer__form-input-container .footer__form-icon-link {
+  position: absolute;
+  right: 11px;
+  top: 9px;
+}
+
+@media (max-width: 1240px) {
+  .footer__links, .footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,117 @@
+.footer__container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 64px;
+  display: flex;
+  justify-content: space-evenly;
+  background: $secondary-bg-color;
+  gap: 125px;
+
+  .footer__nav--main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p {
+      font-size: 14px;
+      color: #F5F7FA;
+    }
+
+    .footer__socials {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .footer__social {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 7px;
+        background: #717171;
+
+        a {
+          font-size: 0;
+        }
+
+        &:hover {
+          background-color: $btn-bg-color;
+        }
+      }
+    }
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 100px;
+    max-width: 640px;
+
+    .footer__nav {
+      h4 {
+        font-size: 20px;
+        color: #FFF;
+        margin-bottom: 24px;
+      }
+
+      div {
+        display: flex;
+        gap: 12px;
+        flex-direction: column;
+
+        a{
+          text-decoration: none;
+          color: #FFF;
+          transition: color .3s ease-in;
+
+          &:hover{
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+
+    .footer__form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 20px;
+        color: #FFF;
+        margin-bottom: 24px;
+        font-weight: bold;
+      }
+
+      .footer__form-input-container {
+        position: relative;
+
+        input {
+          padding: 9px 12px;
+          background-color: #504f4f;
+          outline: none;
+          border: none;
+          border-radius: 5px;
+          color: #FFF;
+
+          ::placeholder {
+            color: #D9DBE1;
+            font-size: 14px;
+          }
+        }
+
+        .footer__form-icon-link {
+          position: absolute;
+          right: 11px;
+          top: 9px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1240px) {
+  .footer__links ,.footer__container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+  }
+}
