@@ -48,6 +48,10 @@
   }
 
   @media (max-width:778px) {
+
+    .cta-section__container {
+      padding-inline: 10px;
+    }
     h2 {
       font-size: $md-font-size;
     }
